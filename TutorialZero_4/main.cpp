@@ -30,7 +30,7 @@ IMAGE* imgPlayer2Avatar = nullptr;
 
 #pragma comment(lib, "Winmm.lib")
 
-bool is_debug = false; // 是否开启调试模式呢
+bool is_debug = false; // 是否开启调试模式呢!
 
 IMAGE	imgMenuBackground;
 
