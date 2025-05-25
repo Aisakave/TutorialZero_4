@@ -30,55 +30,55 @@ IMAGE* imgPlayer2Avatar = nullptr;
 
 #pragma comment(lib, "Winmm.lib")
 
-bool is_debug = false; // ÊÇ·ñ¿ªÆôµ÷ÊÔÄ£Ê½
+bool is_debug = false; // æ˜¯å¦å¼€å¯è°ƒè¯•æ¨¡å¼å‘¢
 
 IMAGE	imgMenuBackground;
 
-IMAGE	imgVS;										//VSÒÕÊõ×Ö
+IMAGE	imgVS;										//VSè‰ºæœ¯å­—
 
-IMAGE	img1P;										//ÎÄ±¾
+IMAGE	img1P;										//æ–‡æœ¬
 IMAGE	img2P;
-IMAGE	img1PDesc;									//¼üÎ»ÃèÊö
+IMAGE	img1PDesc;									//é”®ä½æè¿°
 IMAGE	img2PDesc;
 
-IMAGE	imgGraveStoneLeft;							//Ïò×óÄ¹±®
+IMAGE	imgGraveStoneLeft;							//å‘å·¦å¢“ç¢‘
 IMAGE	imgGraveStoneRight;
-IMAGE	imgSelectorTip;								//Ñ¡ÔñÌáÊ¾
+IMAGE	imgSelectorTip;								//é€‰æ‹©æç¤º
 IMAGE	imgSelectorBackground;
 
-IMAGE	img1PSelectorButtonIdleLeft;				//1PÏò×óÑ¡Ôñ°´Å¥Ä¬ÈÏ
+IMAGE	img1PSelectorButtonIdleLeft;				//1På‘å·¦é€‰æ‹©æŒ‰é’®é»˜è®¤
 IMAGE	img1PSelectorButtonIdleRight;
 IMAGE	img1PSelectorButtonDownLeft;
-IMAGE	img1PSelectorButtonDownRight;				//1PÏò×óÑ¡Ôñ°´Å¥°´ÏÂ
+IMAGE	img1PSelectorButtonDownRight;				//1På‘å·¦é€‰æ‹©æŒ‰é’®æŒ‰ä¸‹
 
 IMAGE	img2PSelectorButtonIdleLeft;
 IMAGE	img2PSelectorButtonIdleRight;
 IMAGE	img2PSelectorButtonDownLeft;
 IMAGE	img2PSelectorButtonDownRight;
 
-IMAGE	imgPeaShooterSelectorBackgroundLeft;		//Íã¶¹Ïò×óÑ¡Ôñ½çÃæ
+IMAGE	imgPeaShooterSelectorBackgroundLeft;		//è±Œè±†å‘å·¦é€‰æ‹©ç•Œé¢
 IMAGE	imgPeaShooterSelectorBackgroundRight;
-IMAGE	imgSunFlowerSelectorBackgroundLeft;			//ÏòÈÕ¿ûÏò×óÑ¡Ôñ½çÃæ
+IMAGE	imgSunFlowerSelectorBackgroundLeft;			//å‘æ—¥è‘µå‘å·¦é€‰æ‹©ç•Œé¢
 IMAGE	imgSunFlowerSelectorBackgroundRight;
 
-IMAGE	imgSky;										//Ìì¿Õ
-IMAGE	imgHills;									//É½Âö
-IMAGE	imgLargePlatform;							//Æ½Ì¨
+IMAGE	imgSky;										//å¤©ç©º
+IMAGE	imgHills;									//å±±è„‰
+IMAGE	imgLargePlatform;							//å¹³å°
 IMAGE	imgSmallPlatform;
 
 IMAGE	img1PCursor;
 IMAGE	img2PCursor;
 
-Atlas	atlasPeaShooterIdleLeft;			//Íã¶¹Ïò×ó
+Atlas	atlasPeaShooterIdleLeft;			//è±Œè±†å‘å·¦
 Atlas	atlasPeaShooterIdleRight;
 Atlas	atlasPeaShooterRunLeft;
 Atlas	atlasPeaShooterRunRight;
-Atlas	atlasPeaShooterAttackExLeft;		//Íã¶¹Ïò×óÌØÊâ¹¥»÷
+Atlas	atlasPeaShooterAttackExLeft;		//è±Œè±†å‘å·¦ç‰¹æ®Šæ”»å‡»
 Atlas	atlasPeaShooterAttackExRight;
-Atlas	atlasPeaShooterDieLeft;				//Ïò×óËÀÍö
+Atlas	atlasPeaShooterDieLeft;				//å‘å·¦æ­»äº¡
 Atlas	atlasPeaShooterDieRight;
 
-Atlas	atlasSunFlowerIdleLeft;				//ÏòÈÕ¿û
+Atlas	atlasSunFlowerIdleLeft;				//å‘æ—¥è‘µ
 Atlas	atlasSunFlowerIdleRight;
 Atlas	atlasSunFlowerRunLeft;
 Atlas	atlasSunFlowerRunRight;
@@ -87,40 +87,40 @@ Atlas	atlasSunFlowerAttackExRight;
 Atlas	atlasSunFlowerDieLeft;
 Atlas	atlasSunFlowerDieRight;
 
-IMAGE	imgPea;								//Íã¶¹
+IMAGE	imgPea;								//è±Œè±†
 Atlas	atlasPeaBreak;
 Atlas	atlasSun;
-Atlas	atlasSunExplode;					//Ì«Ñô±¬Õ¨
-Atlas	atlasSunEx;							//ÌØÊâ¶¯»­
-Atlas	atlasSunExExplode;					//ÌØÊâ±¬Õ¨
-Atlas	atlasSunText;						//ÎÄ±¾¶¯»­
+Atlas	atlasSunExplode;					//å¤ªé˜³çˆ†ç‚¸
+Atlas	atlasSunEx;							//ç‰¹æ®ŠåŠ¨ç”»
+Atlas	atlasSunExExplode;					//ç‰¹æ®Šçˆ†ç‚¸
+Atlas	atlasSunText;						//æ–‡æœ¬åŠ¨ç”»
 
-Atlas	atlasRunEffect;						//±¼ÅÜÌØĞ§
+Atlas	atlasRunEffect;						//å¥”è·‘ç‰¹æ•ˆ
 Atlas	atlasJumpEffect;
 Atlas	atlasLandEffect;
 
-IMAGE	img1PWinner;						//1P»ñÊ¤ÎÄ±¾
+IMAGE	img1PWinner;						//1Pè·èƒœæ–‡æœ¬
 IMAGE	img2PWinner;
-IMAGE	imgWinnerBar;						//»ñÊ¤±³¾°
+IMAGE	imgWinnerBar;						//è·èƒœèƒŒæ™¯
 
-IMAGE	imgPeaShooterAvatar;				//Íã¶¹Í·Ïñ
-IMAGE	imgSunFlowerAvatar;					//ÏòÈÕ¿ûÍ·Ïñ
+IMAGE	imgPeaShooterAvatar;				//è±Œè±†å¤´åƒ
+IMAGE	imgSunFlowerAvatar;					//å‘æ—¥è‘µå¤´åƒ
 
 
 
 void flip_atlas(Atlas& src, Atlas& dst) {
 
-	dst.clear(); // Çå¿ÕÍ¼¼¯·ÀÖ¹³öÏÖÎÊÌâ
+	dst.clear(); // æ¸…ç©ºå›¾é›†é˜²æ­¢å‡ºç°é—®é¢˜
 
 	for (int i = 0; i < src.get_size(); i++) {
 
 		IMAGE img_flpipped;
 
-		// ¶ÔÔ´Í¼¼¯Ã¿Ò»Ö¡¶¼½øĞĞÍ¼Æ¬·­×ª²Ù×÷
+		// å¯¹æºå›¾é›†æ¯ä¸€å¸§éƒ½è¿›è¡Œå›¾ç‰‡ç¿»è½¬æ“ä½œ
 
 		flip_image(src.get_image(i), &img_flpipped);
 
-		// È»ºóÌí¼Óµ½Ä¿±êÍ¼¼¯ÖĞ
+		// ç„¶åæ·»åŠ åˆ°ç›®æ ‡å›¾é›†ä¸­
 
 		dst.add_image(img_flpipped);
 
@@ -130,11 +130,11 @@ void flip_atlas(Atlas& src, Atlas& dst) {
 
 void load_game_resources()
 {
-	//¼ÓÔØ×ÖÌå
-		//½« IPix.ttf" ¼ÓÔØµ½ÏµÍ³×ÖÌåÖĞ£¬²¢½«ÆäÉèÖÃÎªË½ÓĞ×ÖÌå¡£
+	//åŠ è½½å­—ä½“
+		//å°† IPix.ttf" åŠ è½½åˆ°ç³»ç»Ÿå­—ä½“ä¸­ï¼Œå¹¶å°†å…¶è®¾ç½®ä¸ºç§æœ‰å­—ä½“ã€‚
 	AddFontResourceEx(_T("resources/IPix.ttf"), FR_PRIVATE, nullptr);
 
-	//¼ÓÔØÍ¼Æ¬
+	//åŠ è½½å›¾ç‰‡
 	loadimage(&imgMenuBackground, _T("resources/menu_background.png"));
 
 	loadimage(&imgVS, _T("resources/VS.png"));
@@ -171,7 +171,7 @@ void load_game_resources()
 	loadimage(&img1PCursor, _T("resources/1P_cursor.png"));
 	loadimage(&img2PCursor, _T("resources/2P_cursor.png"));
 
-	//Íã¶¹ÉäÊÖ
+	//è±Œè±†å°„æ‰‹
 	atlasPeaShooterIdleRight.load_from_file(_T("resources/peashooter_idle_%d.png"), 9);
 	flip_atlas(atlasPeaShooterIdleRight, atlasPeaShooterIdleLeft);
 	atlasPeaShooterRunRight.load_from_file(_T("resources/peashooter_run_%d.png"), 5);
@@ -181,7 +181,7 @@ void load_game_resources()
 	atlasPeaShooterDieRight.load_from_file(_T("resources/peashooter_die_%d.png"), 4);
 	flip_atlas(atlasPeaShooterDieRight, atlasPeaShooterDieLeft);
 
-	//ÏòÈÕ¿û
+	//å‘æ—¥è‘µ
 	atlasSunFlowerIdleRight.load_from_file(_T("resources/sunflower_idle_%d.png"), 8);
 	flip_atlas(atlasSunFlowerIdleRight, atlasSunFlowerIdleLeft);
 	atlasSunFlowerRunRight.load_from_file(_T("resources/sunflower_run_%d.png"), 5);
@@ -209,7 +209,7 @@ void load_game_resources()
 
 	loadimage(&imgPeaShooterAvatar, _T("resources/avatar_peashooter.png"));
 	loadimage(&imgSunFlowerAvatar, _T("resources/avatar_sunflower.png"));
-	//¼ÓÔØÒôÀÖ
+	//åŠ è½½éŸ³ä¹
 	mciSendString(_T("open resources/bgm_game.mp3 alias bgmGame"), nullptr, 0, nullptr);
 	mciSendString(_T("open resources/bgm_menu.mp3 alias bgmMenu"), nullptr, 0, nullptr);
 
